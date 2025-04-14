@@ -8,22 +8,22 @@
 
 int main()
 {
-    char alfavit[] = {"abcdefghijklmnopqrstuvwxyz"};
-    char letter = {'m'};
-    int index = -1;
+    char alfavit[] = {"abcdefghijklmnopqrstuvwxyz"};                                //Создание массива для алфавита
+    char letter = {'m'};                                                            //Создание переменной с буквой, которую ищем
+    int index = -1;                                                                 //Создание переменной индекс с отрицательным значением
     
-    int alfavit_size = sizeof(alfavit) / sizeof(alfavit[0]);
-    for (int i = 0; i < alfavit_size; i++) {
+    int alfavit_size = sizeof(alfavit) / sizeof(alfavit[0]);                        //определение количества буков
+    for (int i = 0; i < alfavit_size; i++) {                                        //цикл с определением индекса буковы
         if (alfavit[i] == letter) {
             index = i;
             break;
         }
     }
     
-    if (index != -1) {
-        printf ("Буква(индекс) '%c' находится на позиции %d\n", letter, index);
+    if (index != -1) {                                                               // проверка на наличие буковы XD
+        printf ("Буква(индекс) '%c' находится на позиции %d\n", letter, index);      // вывод при наличии буковы =D
     } else {
-        printf ("Буква '%c' не найдена\n", letter);
+        printf ("Буква '%c' не найдена\n", letter);                                  // вывод ошибки, если буквы нет, поставьте 5, пожалуйста.
     }
     
     return 0;
